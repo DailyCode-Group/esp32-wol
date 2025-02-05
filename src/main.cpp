@@ -15,9 +15,10 @@ const uint8_t channel = 0;
 
 int status = WL_IDLE_STATUS; // the Wifi radio's status
 
-IPAddress local_IP(192, 168, 1, 201);
-IPAddress gateway(192, 168, 1, 1);
-IPAddress subnet(255, 255, 0, 0);
+// setup static ip for faster connection
+IPAddress local_IP(10, 0, 0, 201);
+IPAddress gateway(10, 0, 0, 1);
+IPAddress subnet(255, 0, 0, 0);
 
 // UDP broadcast address and port
 const char *broadcastIP = "255.255.255.255";
