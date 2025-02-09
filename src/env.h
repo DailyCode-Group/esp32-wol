@@ -2,7 +2,7 @@
 #define ENV_H
 
 // Uncomment for development mode
-#define DEV_MODE
+// #define DEV_MODE
 
 
 // Values are set in a file env.cpp in the same directory as the env.h file
