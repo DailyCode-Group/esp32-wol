@@ -122,9 +122,11 @@ void setup()
       Serial.println(endTime - startTime);
     #endif
 
+    delay(100);
     sendWOLcommands();
   }
 
+  delay(100);
   esp_sleep_enable_ext0_wakeup((gpio_num_t)BUTTON_PIN, LOW); // Wake up when BUTTON_PIN is LOW
 
   #ifdef DEV_MODE
